@@ -1,0 +1,70 @@
+version: '3'
+services:
+    # Serviço Laravel
+    app:
+        image: richarvey/nginx-php-fpm:latest
+        container_name: app
+        restart: unless-stopped
+        tty: true
+        env_file:
+            - ./services/app/.env
+        environment:
+            DB_HOST: db
+            DB_USER: homestead
+            DB_PASSWORD: secret
+            WEBROOT: /var/www/html/public/
+            PGID: 1000
+            PUID: 1000
+            REMOVE_FILES: 0
+            APPLICATION_ENV: development
+            SKIP_CHOWN: 1
+            SKIP_COMPOSER: 1
+        working_dir: /var/www/html
+        volumes:
+            - ./services/app/:/var/www/html/
+
+    #Nginx Service
+    webserver:
+        build:
+            context: ./nginx
+            dockerfile: Dockerfile
+        image: jovensgenios.com/webserver
+        container_name: webserver
+        restart: unless-stopped
+        tty: true
+        ports:
+        - "80:80"
+
+    #MySQL Service
+    db:
+        image: mysql:5.7.22
+        container_name: db
+        restart: unless-stopped
+        tty: true
+        ports:
+        - "3306:3306"
+        environment:
+            MYSQL_DATABASE: homestead
+            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_USER: homestead
+            MYSQL_PASSWORD: secret
+        volumes:
+        - dbdata:/var/lib/mysql/
+        - ./mysql/my.cnf:/etc/mysql/my.cnf
+        - ./mysql/docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
+
+    # Para gerenciamento local dos banco de dados com PhpMyAdmin
+    php-my-admin:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: php-my-admin
+        restart: unless-stopped
+        tty: true
+        ports:
+        - "3030:80"
+        links:
+        - db
+
+#Volumes
+volumes:
+    dbdata:
+        driver: local
