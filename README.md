@@ -2,7 +2,7 @@
 
 O mundo Web está por toda parte! A maior parte das empresas (me arrisco a dizer algo próximo de 100%) tem alguma forma de interface com a web, seja seu site institucional ou aplicações sofisticadas, como é o caso da Jovens Gênios. **Web é a área que mais cresce em programação nos últimos anos** (dá uma Googlada).
 
-O desenvolvimento web pode ser dividido em 3 grandes áreas: **Front-End**, **Back-End** e **DevOps** (dá uma olhada nos links abaixo para entender melhor). Mas o foco deste curso é Front-End, ou seja, o que o usuário vê e interage diretamente (na verdade, é um pouco mais que isso)!
+O desenvolvimento web pode ser dividido em 3 grandes áreas: **Front-End**, **Back-End** e **DevOps** (dá uma olhada nos links abaixo para entender melhor). Mas o foco deste curso é Back-end, ou seja, toda mágica que acontece nos bastidores para que o usuário consiga interagir e acessar a aplicação!
 
 ![desenvolvimento web](imagens/desenvolvimento_web.png?raw=true)  
 
@@ -30,7 +30,7 @@ Os projetos estão dentro da pasta /projetos neste repositório. Lembre-se de cr
 
 Os projetos utilizam PHP + banco de dados MySQL. Para que tudo funcione adequadamente e você consiga rodar seus projetos, você precisa de um ambiente com algum servidor web, com PHP instalado e MySQL.
 
-Para facilitar esse processo e garantir que tudo funcione adequadamente, toda infraestrutura que você precisa está pronta em um ambiente [Docker](https://www.docker.com/) com todas as configurações. Você consegue acessar a infraestrutura em Docker na pasta /docker deste repositório. Leia as [instruções](docker/Intruções.md).
+Para facilitar esse processo e garantir que tudo funcione adequadamente, toda infraestrutura que você precisa está pronta em um ambiente [Docker](https://www.docker.com/) com todas as configurações. Você consegue acessar a infraestrutura em Docker na pasta /docker deste repositório. Leia as [instruções](docker/Instruções.md).
 
 
 Materiais sobre fundamentos do desenvolvimento web:

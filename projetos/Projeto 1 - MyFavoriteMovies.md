@@ -1,4 +1,4 @@
-# MyFavoriteMovies
+# Projeto 1 - MyFavoriteMovies
 
 **Objetivo**: Criar uma aplicação web fullstack onde o usuário consiga ver uma lista de filmes e marcar seus favoritos.
 
