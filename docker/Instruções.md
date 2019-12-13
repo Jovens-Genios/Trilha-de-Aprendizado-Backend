@@ -7,11 +7,11 @@ Clone este repositório para seua máquina. Em seguida, clone o [repositório do
 A estrutura do projeto deve ficar da seguinte forma:
 
 ```
--/docker/
---docker-compose.yml
---mysql/
---services/
---services/app/
+/docker/
++ docker-compose.yml
++ mysql/
++ services/
+++ app/
 ```
 
 2. Copie o conteúdo do arquivo .env.example para um arquivo .env na raiz do projeto
