@@ -2,15 +2,17 @@
 
 1.  Clonar o repositório do Laravel
 
-Clone o [repositório do Laravel](https://github.com/laravel/laravel) dentro da pasta /services. Em seguida, renomeie a pasta clonada para "app".
+Clone este repositório para seua máquina. Em seguida, clone o [repositório do Laravel](https://github.com/laravel/laravel) dentro da pasta /docker/services. Em seguida, renomeie a pasta clonada para "app".
 
 A estrutura do projeto deve ficar da seguinte forma:
 
--/
+```
+-/docker/
 --docker-compose.yml
 --mysql/
 --services/
 --services/app/
+```
 
 2. Copie o conteúdo do arquivo .env.example para um arquivo .env na raiz do projeto
 
