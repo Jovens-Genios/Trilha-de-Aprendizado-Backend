@@ -18,13 +18,13 @@ A estrutura do projeto deve ficar da seguinte forma:
 ++ app/
 ```
 
-2. Copie o conteúdo do arquivo .env.example para um arquivo .env na raiz do projeto
+3. Copie o conteúdo do arquivo .env.example para um arquivo .env na raiz do projeto
 
 ```
 	cp .env.example .env
 ```
 
-3.  Instale as dependências do composer.json
+4.  Instale as dependências do composer.json
 
 Inicialize seus containers na raiz do diretório /docker:
 
@@ -38,9 +38,9 @@ Você não precisa ter o Composer instalado na sua máquina para este passo, uti
 	docker-compose exec app composer install
 ```
 
-Este comando instala todos os pacotes usando o Composer no container Docker e consequentemente na sua pasta local (por conta do volume montado, -v), em seguida, remove o container.
+Este comando instala todos os pacotes usando o Composer no container Docker e consequentemente na sua pasta local (por conta do [volume bind](https://docs.docker.com/storage/volumes)), em seguida, remove o container.
 
-4. Configurações no Laravel
+5. Configurações no Laravel
 
 *   Gere uma chave para sua aplicação, com o comando:
 ```
