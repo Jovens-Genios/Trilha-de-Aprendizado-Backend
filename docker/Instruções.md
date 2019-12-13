@@ -38,7 +38,7 @@ Você não precisa ter o Composer instalado na sua máquina para este passo, uti
 	docker-compose exec app composer install
 ```
 
-Este comando instala todos os pacotes usando o Composer no container Docker e consequentemente na sua pasta local (por conta do [volume bind](https://docs.docker.com/storage/volumes)), em seguida, remove o container.
+Este comando instala todos os pacotes usando o Composer no container Docker e consequentemente na sua pasta local (por conta do [volume bind](https://docs.docker.com/storage/volumes)).
 
 5. Configurações no Laravel
 
