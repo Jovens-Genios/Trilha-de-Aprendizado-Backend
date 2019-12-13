@@ -1,13 +1,17 @@
 # Instruções para rodar infraestrutura Docker
 
-1.  Clonar o repositório do Laravel
+1. Organizando as pastas do seu projeto
 
-Clone este repositório para seua máquina. Em seguida, clone o [repositório do Laravel](https://github.com/laravel/laravel) dentro da pasta /docker/services. Em seguida, renomeie a pasta clonada para "app".
+Copie todos os arquivos e pastas que há nesta pasta /docker para a raiz do seu projeto. Em seguida, cria uma pasta chamada "services" na raiz do projeto.
+
+2.  Clonar o repositório do Laravel
+
+Clone o [repositório do Laravel](https://github.com/laravel/laravel) dentro da pasta /services que você acabou de criar. Em seguida, renomeie a pasta clonada para "app".
 
 A estrutura do projeto deve ficar da seguinte forma:
 
 ```
-/docker/
+/
 + docker-compose.yml
 + mysql/
 + services/
