@@ -59,8 +59,12 @@ Pronto! Agora para rodar comandos no seu container Laravel, basta seguir o segui
 	docker-compose exec app comando
 ```
 
-5. phpMyAdmin
+6. phpMyAdmin
 
 Você pode gerenciar seu banco de dados local graficamente com o phpMyAdmin. Nesta infraestrutura, é inicializado um container phpMyAdmin para vocÊ. Para acessá-lo, visite http://localhost:3030 na sua máquina. 
 
 As credenciais de acesso ao banco de dados se encontram nas variáveis "MYSQL_USER" e "MYSQL_PASSWORD" do serviço de banco de dados no docker-compose.yml.
+
+### Como acessar a aplicação Laravel
+
+Com tudo rodando, você consegue acessar sua aplicação Laravel localmente em http://localhost/app. Agora é só se sujar na lama e testar sua aplicação!
