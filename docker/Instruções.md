@@ -18,7 +18,7 @@ A estrutura do projeto deve ficar da seguinte forma:
 ++ app/
 ```
 
-3. Copie o conteúdo do arquivo .env.example para um arquivo .env na raiz do projeto
+3. Na pasta app do Laravel, copie o conteúdo do arquivo .env.example para um arquivo .env.
 
 ```
 	cp .env.example .env
