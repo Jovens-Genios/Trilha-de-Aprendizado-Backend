@@ -8,6 +8,8 @@ Copie todos os arquivos e pastas que há nesta pasta /docker para a raiz do seu 
 
 Clone o [repositório do Laravel](https://github.com/laravel/laravel) dentro da pasta /services que você acabou de criar. Em seguida, renomeie a pasta clonada para "app".
 
+Após isso, mova a pasta /conf, que se encontra em /docker/nginx/conf para dentro da pasta "app".
+
 A estrutura do projeto deve ficar da seguinte forma:
 
 ```
@@ -16,6 +18,7 @@ A estrutura do projeto deve ficar da seguinte forma:
 + mysql/
 + services/
 ++ app/
++++ conf/nginx/nginx-site.conf
 ```
 
 3. Na pasta app do Laravel, copie o conteúdo do arquivo .env.example para um arquivo .env.
