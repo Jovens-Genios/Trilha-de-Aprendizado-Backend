@@ -22,6 +22,7 @@ Para isso, sua aplicação deverá conter:
 
 *   Uma interface web front-end para interação do usuário;
 *   API REST com Laravel para conexão com bancos de dados MySQL;
+*   Utilize o ORM do Laravel (Eloquent) para modelar as relações entre as entidades no banco de dados;
 
 ### Instruções
 
