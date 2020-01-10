@@ -16,6 +16,7 @@ Ações importantes que o usuário deve ser capaz de fazer:
 *   Visualizar sua lista de filmes favoritos;
 *   Criar conta;
 *   "Logar" na sua conta (não precisa de autenticação, basta colocar seu email)
+*   Editar seus dados: foto, nome e email (página de perfil). 
 *   Deletar sua conta;
 
 Para isso, sua aplicação deverá conter:
